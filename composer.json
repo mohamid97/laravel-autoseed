@@ -1,0 +1,28 @@
+{
+    "name": "muhmd/laravel-autoseed",
+    "description": "Scan the database schema and fill every table with realistic dummy data, respecting column types and relations.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Muhmd",
+            "email": "muhmd@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/console": "^11.0|^12.0",
+        "fakerphp/faker": "^1.23"
+    },
+    "autoload": {
+        "psr-4": { "AutoSeed\\": "src/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["AutoSeed\\AutoSeedServiceProvider"]
+        }
+    },
+    "minimum-stability": "stable"
+}
